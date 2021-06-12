@@ -48,9 +48,44 @@ Data Backends
 - Jenkins 
 
 
+Models 
+------------------------------
+
+products
+    - name 
+    - sku 
+    - description 
+    - price
+    - on_sale
+    - media 
+    - number_in_stock 
+    - category_id 
+    
+    - popularity_score 
+    - average_review 
+    - promoted 
+
+categories
+    name
+    parent 
+    
+media for products 
+reviews?
+details dependant on categories? 
+
+
+customer
+\o
+basket 
+    - basket_items 
+order
+    - order_items 
+billing_details 
+shipping_addresses 
 
 
 
+admin 
 
 This  README would normally document whatever steps are necessary to get the
 application up and running.
