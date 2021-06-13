@@ -31,7 +31,7 @@ rSpec
 
 Tooling 
 -----------------------
-Git 
+Git * 
 webpack 
 etc 
 
@@ -43,7 +43,12 @@ Data Backends
 
  CD + CI + Devops
  -----------------------
-- Docker
+- Docker * 
+    $ docker-compose build
+    $ docker-compose run runner yarn install
+    $ docker-compose run runner ./bin/setup
+    More info : https://github.com/evilmartians/chronicles-gql-martian-library
+
 - Deployment 
 - Jenkins 
 
