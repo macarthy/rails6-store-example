@@ -17,7 +17,6 @@ RSpec.describe Category, type: :model do
 
       expect(menu.root.name).to eq("Top level category 1")
       expect(menu.children.length).to eq(2)
-
     end
   end
 end
