@@ -36,7 +36,9 @@ gem 'awesome_nested_set'
 
 # api gems
 gem 'grape'
+#TODO configure rack-cors
 gem 'rack-cors'
+gem 'grape-active_model_serializers'
 
 
 group :development, :test do
