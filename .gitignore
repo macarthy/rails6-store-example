@@ -20,7 +20,7 @@ tags
 /tmp/pids/*
 !/tmp/pids/
 !/tmp/pids/.keep
-
+tmux-client*
 # Ignore uploaded files in development.
 /storage/*
 !/storage/.keep
