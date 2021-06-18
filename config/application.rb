@@ -25,6 +25,11 @@ module Rails6StoreExample
     config.load_defaults 6.1
 
     # Configuration for the application, engines, and railties goes here.
+
+    # Auto-load API and its subdirectories
+    config.paths.add File.join('app', 'api'), glob: File.join('**', '*.rb')
+    config.autoload_paths += Dir[Rails.root.join('app', 'api', '*')]
+
     #
     # These settings can be overridden in specific environments using the files
     # in config/environments, which are processed later.
