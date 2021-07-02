@@ -33,6 +33,14 @@ gem 'bootsnap', '>= 1.4.4', require: false
 
 gem 'awesome_nested_set'
 
+
+# api gems
+gem 'grape'
+#TODO configure rack-cors
+gem 'rack-cors'
+gem 'grape-active_model_serializers'
+
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
@@ -44,6 +52,8 @@ group :development, :test do
   gem 'rspec-rails', '~> 5.0.0'
   # gem 'selenium-webdriver'
   gem 'shoulda-matchers'
+  gem 'guard'
+  gem 'guard-rspec', require: false
 end
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
