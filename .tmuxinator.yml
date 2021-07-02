@@ -1,0 +1,16 @@
+name: website
+root: ~/projects/rails6-store-example
+on_project_first_start: open -a firefox 'http://0.0.0.0:5000'
+windows:
+  - editor: nvim .
+  - console:
+      layout: even-horizontal
+      panes:
+        - bundle exec rails c
+        -
+  - workers:
+      layout: even-horizontal
+      panes:
+        - foreman start
+        - bundle exec guard
+  - logs: tail -f log/development.log
