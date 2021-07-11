@@ -33,6 +33,8 @@ gem 'bootsnap', '>= 1.4.4', require: false
 
 gem 'awesome_nested_set'
 
+#auth
+gem 'devise'
 
 # api gems
 gem 'grape'
